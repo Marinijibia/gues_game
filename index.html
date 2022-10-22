@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Guess Game</title>
     <link rel="stylesheet" href="index.css">
-    <script src="./index.js"></script>
+    
 </head>
 <body>
     <div class="main-wrapper">
-        <h1 class="heading">Guess Game</h1>
-        <p>Guess a number from one to 100</p>
-        <p>Enter a number below</p>
-        <input type="text" id="user-input"><button id="btn">Enter</button>
+        <h2 class="heading">Guess Game</h2>
+        <p id="welcome"></p>
+        <p>Guess a number from 0.0 and 2.0</p>
+        <input type="text" placeholder="0.00" id="user-input">
+        <button type="submit" id="btn" onclick="guess()" >Guess</button>
+        <p id="mes1">Number of Guess: 0</p>
+        <p id="mes2">Guessed numbers are: none</p>
+        <p id="mes3"></p>
     </div>
+    
+    <script src="./index.js"></script>
 </body>
 </html>
