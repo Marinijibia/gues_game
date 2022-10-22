@@ -1,10 +1,10 @@
 var name = window.prompt("Whats tour name");
 var greeting = document.getElementById("welcome").innerHTML = `Hi! ${name} welcome to JK guess game`;
-window.alert(`${greeting}`);
 
 var mes1 = document.getElementById('mes1');
 var mes2 = document.getElementById('mes2');
 var mes3 = document.getElementById('mes3');
+var p_a_btn = document.getElementById("p_a_btn");
 
 var answer = Math.floor(Math.random()*2) + 1;
 var numOfGuesses = 0;
@@ -30,13 +30,17 @@ function guess() {
             mes3.textContent = `Guessed numbers are: ${guessedNums}`;
         }
         else if (userGuess == answer){
-            mes1.textContent = `Yesss you have win ${name}`;
+            mes1.textContent = `Yes you have win ${name}`;
             mes2.textContent = `The number was: ${answer}`;
             mes3.textContent = `You guessed it in ${numOfGuesses} guesses`
             document.getElementById('btn').disabled = true;
         }
     }
 }
+
+p_a_btn.addEventListener('click', function(){
+    location.reload();
+})
 
 
 
