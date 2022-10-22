@@ -5,8 +5,8 @@ var mes1 = document.getElementById('mes1');
 var mes2 = document.getElementById('mes2');
 var mes3 = document.getElementById('mes3');
 var p_a_btn = document.getElementById("p_a_btn");
-
-var answer = Math.floor(Math.random()*2) + 1;
+let num = 2
+var answer = Math.floor(Math.random()* num) + 1;
 var numOfGuesses = 0;
 var guessedNums = [];
 
@@ -37,6 +37,8 @@ function guess() {
         }
     }
 }
+
+
 
 p_a_btn.addEventListener('click', function(){
     location.reload();
