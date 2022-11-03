@@ -1,3 +1,3 @@
 # gues_game
 
-Replit link to guess game: https://replit.com/@Marinijibias/guesgame#.config
+Replit link to guess game: https://replit.com/@Marinijibias/gussingGame#index.js
